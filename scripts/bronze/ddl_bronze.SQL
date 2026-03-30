@@ -17,10 +17,11 @@ cst_id Int,
 cst_key nvarchar(50),
 cst_firstname nvarchar(50),
 cst_lastname nvarchar(50),
-cst_material_status nvarchar(50),
+cst_marital_status nvarchar(50),
 cst_gndr nvarchar(50),
 cst_create_date date
 );
+
 
 if OBJECT_ID ('bronze.crm_prd_info', 'U') is not null
 	Drop table bronze.crm_prd_info;
