@@ -1,3 +1,18 @@
+# **Naming Conventions**     
+
+This document outlines the naming conventions used for schemas, tables, views, columns, and othe objects in the data warehouse.
+
+## **Table of Contents**
+1. [General Principles](#general-principles)
+2. [Table Naming Conventions](#table-naming-conventions)
+   - [Bronze Rules](#bronze-rules)
+   - [Silver Rules](#silver-rules)
+   - [Gold Rules](#gold-rules)
+3. [Column Naming Conventions](#column-naming-conventions)
+    - [Surrogate Keyes](#surrogate-keys)
+    - [Technical Columns](#technical-columns)
+4.  [Stored Procedure](#stored-procedure-naming-conventions)
+
 ## **Table Naming Convention**
 ### **Bronze Rules**
 - All names must start with the source system name and table names must match their original names without renaming.
@@ -5,7 +20,7 @@
   - `<sourcesystem>`: Name of the source system (e.g., `crm`, `erp`).
   - `entity`: Exact table name from the source system
   - Example:`crm_customer_info` → Customer information from the CRM system.
-     
+
   ### **Silver Rules**
 - All names must start with the source system name and table names must match their original names without renaming.
 - **`<sourcesystem>_<entity>`**
@@ -22,7 +37,7 @@
      - `dim_customers` → Dimension table for customer data.
      - `fact_sales` → Fact table containing sales transactions.
 
- **Glossary of category Patterns**
+#### **Glossary of category Patterns**
   |Pattern|Meaning|Examples(s)|
   |-------|-------|-----------|
   |`dim_`|Dimension table|`dim_customer`, `dim_product`|
