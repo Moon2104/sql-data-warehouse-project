@@ -12,8 +12,16 @@ This document outlines the naming conventions used for schemas, tables, views, c
     - [Surrogate Keyes](#surrogate-keys)
     - [Technical Columns](#technical-columns)
 4.  [Stored Procedure](#stored-procedure-naming-conventions)
+---
 
+## **General Principles**
+
+- **Nameing Conventions**: Use snake_case, with lowercase letters and underscores (`_`) to seprate words.
+- **Language**: Use English for all names.
+- **Avoid Reserved words**: Do not use SQL reserved words as object names.
+- 
 ## **Table Naming Convention**
+
 ### **Bronze Rules**
 - All names must start with the source system name and table names must match their original names without renaming.
 - **`<sourcesystem>_<entity>`**
@@ -38,6 +46,7 @@ This document outlines the naming conventions used for schemas, tables, views, c
      - `fact_sales` → Fact table containing sales transactions.
 
 #### **Glossary of category Patterns**
+
   |Pattern|Meaning|Examples(s)|
   |-------|-------|-----------|
   |`dim_`|Dimension table|`dim_customer`, `dim_product`|
