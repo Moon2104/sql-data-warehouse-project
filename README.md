@@ -60,7 +60,7 @@ Develop SQL -based analytics to deliver detailed insights into:
 - **Sales Trends**
 
   These insights empower stakeholders with key business metrics, enabling strategic decision-making.
-  for more details, refer to [docs/requirement.md](docs/reqirements.md).
+  for more details, refer to [doc/requirement.md](docs/reqirements.md).
 
 ## 📂 Repository Structure
 ```
